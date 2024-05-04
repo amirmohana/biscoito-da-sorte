@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+button {
+    width: 25rem;
+    height: 19.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 2.7rem;
+}
+
+.hide {
+    display: none;
+}
+
+
+main {
+    background-color: white;
+    width: 43rem;
+    padding: 48px 64px 64px 64px;
+    width: min(42.8rem, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+
+}
+
+/* screen1 */
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    width: 25.8rem;
+
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h1,
+p {
+    color: #34355B;
+}
+
+p {
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1.4rem;
+
+}
+
+#btnTry:hover {
+    animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0) translateY(-2px);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0) translateY(4px);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0) translateY(-6px);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0) translateY(6px);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* screen2 */
+h2 {
+    color: #34355B;
+    width: 30rem;
+
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1.7rem;
+}
+
+h3 {
+    color: #000;
+    text-align: center;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1.7rem;
+}
+
+.animação {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    margin-bottom: 6rem;
+    animation: slide-up 2s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.screen2{
+    padding: 48px 64px;
+}
+
+.screen2 img {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    padding: 43.128px 0px 42.341px 0px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.3rem;
+}
+
+
+.screen2 button {
+    display: flex;
+    padding: 1.6rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .4rem;
+    background: #FF9500;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.screen2 #btnReset {
+    color: #FFF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 17.4rem;
+    height: 5.2rem;
+}
+@keyframes slide-up {
+    from {
+      transform: translateY(100%) scale(0.1); 
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0) scale(1); 
+      opacity: 1;
+    }
+  }
